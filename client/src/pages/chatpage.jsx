@@ -21,7 +21,7 @@ const Chatpage = () => {
       return;
     }
 
-    const newSocket = io("http://localhost:4000");
+    const newSocket = io("https://chat-website-eight.vercel.app/");
     setSocket(newSocket);
 
     // Join the room

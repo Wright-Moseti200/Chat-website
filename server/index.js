@@ -14,6 +14,10 @@ app.use(cors({
     origin:"http://localhost:5173",
 }));
 
+app.get("/",(req,res)=>{
+res.send("Express server is running");
+});
+
 const roomUsers = new Map();
 
 io.on("connection",(socket)=>{
